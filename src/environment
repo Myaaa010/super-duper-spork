@@ -1,1 +1,24 @@
+## Environment v0.1 Design
 
+### Assets
+- One tradable asset
+- Initial cash: 10000
+- Initial shares: 0
+- Price series: fixed list, e.g. [10, 11, 12, 9, 13]
+
+### Actions
+- 0: Hold
+- 1: Buy one share
+- 2: Sell one share
+
+### State
+- cash
+- shares
+- current price
+- day
+
+### Reward
+- reward = new portfolio value - previous portfolio value
+
+### Done
+- Episode ends when all prices are used
